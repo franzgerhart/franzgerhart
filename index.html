@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Franz Gerhart</title>
+
+	<!-- WebApp Stuff
+	================================================================================================================== -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name='viewport' content='viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1'>
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Franz Gerhart">
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+<!--	<link rel="manifest" href="/manifest.json">-->
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<style>
+
+        /*@font-face {*/
+        /*    font-family : 'Sandoval';*/
+        /*    src         : url('assets/fonts/Sandoval-Regular.eot');*/
+        /*    src         : url('assets/fonts/Sandoval-Regular.eot?#iefix') format('embedded-opentype'),*/
+        /*    url('assets/fonts/Sandoval-Regular.woff') format('woff'),*/
+        /*    url('assets/fonts/Sandoval-Regular.ttf') format('truetype'),*/
+        /*    url('assets/fonts/Sandoval-Regular.woff2') format('woff2'),*/
+        /*    url('assets/fonts/Sandoval-Regular.svg') format('svg');*/
+        /*    }*/
+
+		/*@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,500;1,700&display=swap');*/
+
+		@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,500;1,700&family=Smooch&display=swap');
+
+		html, body {
+			background-color    : #292931;
+			background-image    : url("assets/background/background.jpg");
+			background-size     : cover; /* <------ */
+			background-repeat   : no-repeat;
+			background-position : center center;
+			height              : 100%;
+			padding             : 0;
+			margin              : 0;
+		}
+
+		.container {
+			display         : flex;
+			flex-direction  : column;
+			align-items     : center;
+			justify-content : center;
+			height          : 100%;
+		}
+
+		.image {
+			margin    : 0;
+			max-width : 80px;
+		}
+
+		.text {
+			font-family: 'Smooch', cursive;
+			/*font-family: 'IBM Plex Sans', sans-serif;*/
+			/*color                     : #292931;*/
+			/*-webkit-text-stroke-width : 1px;*/
+			/*-webkit-text-stroke-color : #999999;*/
+			/*background                : -webkit-linear-gradient(#424242, #000000);*/
+			/*-webkit-background-clip   : text;*/
+			/*-webkit-text-fill-color   : transparent;*/
+			/*text-shadow: 0 0 4px #a7a7a7;*/
+			margin                    : 0;
+			font-size                 : 20vw;
+			max-width                 : 80vw;
+			text-align                : center;
+		}
+
+		.text-email {
+			font-family: 'IBM Plex Sans', sans-serif;
+			/*color                     : #292931;*/
+			/*-webkit-text-stroke-width : 1px;*/
+			/*-webkit-text-stroke-color : #999999;*/
+			/*background                : -webkit-linear-gradient(#424242, #000000);*/
+			/*-webkit-background-clip   : text;*/
+			/*-webkit-text-fill-color   : transparent;*/
+			/*text-shadow: 0 0 4px #a7a7a7;*/
+			margin                    : 0;
+			font-size                 : 8vw;
+			max-width                 : 90vw;
+			text-align                : center;
+		}
+
+		@media (min-width : 576px) {
+			.image {
+				max-width : 100px;
+			}
+
+			.text {
+				font-size : 15vw;
+				max-width : 50vw;
+			}
+
+			.text-email{
+				font-size :5vw;
+				max-width : 75vw;
+			}
+		}
+
+		/*Medium devices (tablets, 768px and up)*/
+		@media (min-width : 768px) {
+			.image {
+				max-width : 100px;
+			}
+
+			.text {
+				font-size : 10vw;
+				max-width : 50vw;
+			}
+
+			.text-email{
+				font-size : 5vw;
+				max-width : 50vw;
+			}
+		}
+
+		/*Large devices (desktops, 992px and up)*/
+		@media (min-width : 992px) {
+			.image {
+				max-width : 100px;
+			}
+
+			.text {
+				font-size : 10vw;
+				max-width : 50vw;
+			}
+
+			.text-email{
+				font-size : 4vw;
+				max-width : 90vw;
+			}
+		}
+
+		/*Extra large devices (large desktops, 1200px and up)*/
+		@media (min-width : 1200px) {
+			.image {
+				max-width : 100px;
+			}
+			.text {
+				font-size : 8vw;
+				max-width : 50vw;
+			}
+
+			.text-email{
+				font-size : 4vw;
+				max-width : 90vw;
+			}
+
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<p style="text-rendering : optimizeLegibility; font-family: 'Smooch', cursive" class="text">Franz</p>
+	<a style="text-rendering : optimizeLegibility; font-family: 'Smooch', cursive" class="text-email" href="mailto:franz@gerhart.digital">franz@gerhart.digital</a>
+</div>
+</body>
+</html>
